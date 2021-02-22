@@ -131,9 +131,9 @@
 
 ### 3. 서비스 매핑
 
-|        서비스 |                                                       작업                                                        |
-| ------------: | :---------------------------------------------------------------------------------------------------------------: |
-| 포스트 서비스 |                                      createPost() deletePost() updatePost()                                       |
-|   댓글 서비스 | createComment() createNestedComment() updateComment() updateNestedComment() deleteComment() deleteNestedComment() |
-| 로그인 서비스 |                                       signup() login() logout() withdraw()                                        |
-|   쿼리 서비스 |                   findOnePost() findAllPosts() findAllPostsOfWriter() findAllCommentsOfWriter()                   |
+| 서비스 |                                                       작업                                                        |
+| -----: | :---------------------------------------------------------------------------------------------------------------: |
+| 포스트 |                                      createPost() deletePost() updatePost()                                       |
+|   댓글 | createComment() createNestedComment() updateComment() updateNestedComment() deleteComment() deleteNestedComment() |
+| 로그인 |                                       signup() login() logout() withdraw()                                        |
+|   쿼리 |                   findOnePost() findAllPosts() findAllPostsOfWriter() findAllCommentsOfWriter()                   |
