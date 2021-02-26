@@ -184,3 +184,11 @@ HOST: http://localhost:3000
 | v1/comment/nested |  post  |  대댓글 생성   |
 | v1/comment/nested | patch  |  대댓글 수정   |
 | v1/comment/nested | delete |  대댓글 삭제   |
+
+---
+
+---
+
+## 4. 시스템 요약도
+
+<img src = "./system_abstraction.jpeg" width="500" >
