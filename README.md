@@ -171,3 +171,16 @@ HOST: http://localhost:3000
 |   v1/post   | delete |      포스트 삭제      |
 |   v1/post   |  get   |   포스트 정보 확인    |
 | v1/post/all |  get   | 모든 포스트 목록 확인 |
+
+### 댓글
+
+|        URL        | METHOD |      기능      |
+| :---------------: | :----: | :------------: |
+|    v1/comment     |  post  |   댓글 생성    |
+|    v1/comment     | patch  |   댓글 수정    |
+|    v1/comment     | delete |   댓글 삭제    |
+|    v1/comment     |  get   | 댓글 정보 확인 |
+|  v1/comment/all   |  get   | 댓글 목록 확인 |
+| v1/comment/nested |  post  |  대댓글 생성   |
+| v1/comment/nested | patch  |  대댓글 수정   |
+| v1/comment/nested | delete |  대댓글 삭제   |
