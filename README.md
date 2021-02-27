@@ -152,15 +152,13 @@ HOST: http://localhost:3000
 
 ### 작성자
 
-|        URL         | METHOD |           기능            |
-| :----------------: | :----: | :-----------------------: |
-|  v1/writer/signup  |  post  |     작성자 정보 생성      |
-|  v1/writer/login   |  post  |          로그인           |
-|  v1/writer/logout  | patch  |         로그아웃          |
-| v1/writer/withdraw | delete |     작성자 정보 삭제      |
-|    v1/writer/me    |  get   |     작성자 정보 확인      |
-|  v1/writer/posts   |  get   | 작성자의 포스트 목록 확인 |
-| v1/writer/comments |  get   |  작성자의 댓글 목록 확인  |
+|        URL         | METHOD |       기능       |
+| :----------------: | :----: | :--------------: |
+|  v1/writer/signup  |  post  | 작성자 정보 생성 |
+|  v1/writer/login   |  post  |      로그인      |
+|  v1/writer/logout  | patch  |     로그아웃     |
+| v1/writer/withdraw | delete | 작성자 정보 삭제 |
+|    v1/writer/me    |  get   | 작성자 정보 확인 |
 
 ### 포스트
 
@@ -184,6 +182,13 @@ HOST: http://localhost:3000
 | v1/comment/nested |  post  |  대댓글 생성   |
 | v1/comment/nested | patch  |  대댓글 수정   |
 | v1/comment/nested | delete |  대댓글 삭제   |
+
+### 쿼리
+
+|           URL            | METHOD |           기능            |
+| :----------------------: | :----: | :-----------------------: |
+|  v1/query/writer/posts   |  get   | 작성자의 포스트 목록 확인 |
+| v1/query/writer/comments |  get   |  작성자의 댓글 목록 확인  |
 
 ---
 
