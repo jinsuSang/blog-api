@@ -1,5 +1,5 @@
 import { HttpModule, Module } from '@nestjs/common'
-import { WriterController } from './app.controller'
+import { WriterController } from './writer.controller'
 import { WriterService } from './writer.service'
 
 @Module({
