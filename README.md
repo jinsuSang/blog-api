@@ -139,7 +139,7 @@
 | :----: | :---------------------------------------------------------------------------------------------------------------: |
 | 포스트 |                      searchOnePost() searchAllPosts() createPost() deletePost() updatePost()                      |
 |  댓글  | createComment() createNestedComment() updateComment() updateNestedComment() deleteComment() deleteNestedComment() |
-| 작성자 |                                searchWriter() signup() login() logout() withdraw()                                |
+| 작성자 |                      searchWriter() searchAllWriters() signup() login() logout() withdraw()                       |
 |  쿼리  |                               searchAllPostsOfWriter() searchAllCommentsOfWriter()                                |
 
 ---
@@ -159,6 +159,7 @@ HOST: http://localhost:3000
 |  v1/writer/logout  | patch  |     로그아웃     |
 | v1/writer/withdraw | delete | 작성자 정보 삭제 |
 |    v1/writer/me    |  get   | 작성자 정보 확인 |
+|   v1/writer/all    |  get   | 작성자 목록 확인 |
 
 ### 포스트
 
