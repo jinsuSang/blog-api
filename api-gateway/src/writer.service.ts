@@ -1,30 +1,32 @@
-import { HttpService, Injectable } from '@nestjs/common'
+import { Inject, Injectable } from '@nestjs/common'
+import { ClientProxy } from '@nestjs/microservices'
+import { SignupDto } from './dto/writer.dto'
 
 @Injectable()
 export class WriterService {
-  constructor(private httpService: HttpService) {}
+  constructor(@Inject('WRITER_SERVICE') private client: ClientProxy) {}
 
-  signup() {
-    return this.httpService.post('http://localhost:4000/v1/writer/signup')
+  signup(data: SignupDto) {
+    return this.client.emit('signup', data)
   }
 
   login() {
-    return this.httpService.post('http://localhost:4000/v1/writer/login')
+    return this.client.emit('login', {})
   }
 
   logout() {
-    return this.httpService.patch('http://localhost:4000/v1/writer/logout')
+    return this.client.emit('logout', {})
   }
 
   withdraw() {
-    return this.httpService.delete('http://localhost:4000/v1/writer/withdraw')
+    return this.client.emit('withdraw', {})
   }
 
   searchWriter() {
-    return this.httpService.get('http://localhost:4000/v1/writer/me')
+    return this.client.emit('me', {})
   }
 
   searchAllWriters() {
-    return this.httpService.get('http://localhost:4000/v1/writer/all')
+    return this.client.emit('all', {})
   }
 }

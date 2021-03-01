@@ -1,4 +1,5 @@
-import { Controller, Delete, Get, Patch, Post } from '@nestjs/common'
+import { Body, Controller, Delete, Get, Patch, Post } from '@nestjs/common'
+import { SignupDto } from './dto/writer.dto'
 import { WriterService } from './writer.service'
 
 @Controller('v1/writer')
@@ -6,8 +7,8 @@ export class WriterController {
   constructor(private readonly writerService: WriterService) {}
 
   @Post('signup')
-  signup() {
-    return this.writerService.signup()
+  signup(@Body() signupDto: SignupDto) {
+    return this.writerService.signup(signupDto)
   }
 
   @Post('login')
